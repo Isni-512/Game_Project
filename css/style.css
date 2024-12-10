@@ -1,0 +1,135 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h1{
+    text-align: center;
+}
+
+main{
+    flex:1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game-display{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.information{
+    display: flex;
+    padding: 1rem 0;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.energie{
+    display: flex;
+    position: relative;
+    border: 1px solid #000;
+    width: 75%;
+    height: 2rem;
+}
+
+.barre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 100%;
+
+}
+
+.barre p{
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+
+.score-div{
+    display: flex;
+    gap: 2rem;
+}
+
+.grille{
+    width: 100%;
+}
+
+#Dungeon{
+
+    width: 100%;
+    border: 2px solid #000;
+    background-image: url(/assets/sol.png);
+    padding: auto;
+}
+
+#Dungeon td{
+    width: 2rem;
+    height: 2rem;
+}
+
+.boutons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.direction table{
+    border-collapse: collapse;
+}
+
+.direction table td{
+    padding: 0;
+}
+
+.fleche{
+    margin:0;
+
+}
+
+.fleche svg{
+    width: 1.5rem;
+}
+
+.exit{
+    padding: 1rem;
+}
+
+.game-over{
+    height: 10rem;
+    width: 20rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #000;
+}
+
+.game-over #retry{
+    width: 8rem;
+}
