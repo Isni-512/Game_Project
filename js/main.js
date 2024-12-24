@@ -45,7 +45,7 @@ function creationDungeon() {
             else if (grille[i][j] === "T") {
 
                 const imgTresor = document.createElement('img');
-                imgTresor.src = '/assets/gold_s_chest.png';
+                imgTresor.src = 'assets/gold_s_chest.png';
                 td.append(imgTresor);
             }
 
