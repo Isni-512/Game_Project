@@ -52,7 +52,7 @@ function creationDungeon() {
             else if (grille[i][j] === "B") {
 
                 const imgBonus = document.createElement('img');
-                imgBonus.src = 'Game_Project/assets/viande.png';
+                imgBonus.src = 'assets/viande.png';
                 td.append(imgBonus);
             }
 
