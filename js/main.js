@@ -37,7 +37,7 @@ function creationDungeon() {
             //ajoute une image de piege au dungeon
             if (grille[i][j] === "P") {
                 const imgPiege = document.createElement('img');
-                imgPiege.src = '/assets/Spike_trap.png';
+                imgPiege.src = 'assets/Spike_trap.png';
                 td.append(imgPiege);
             }
 
@@ -52,21 +52,21 @@ function creationDungeon() {
             else if (grille[i][j] === "B") {
 
                 const imgBonus = document.createElement('img');
-                imgBonus.src = '/assets/viande.png';
+                imgBonus.src = 'assets/viande.png';
                 td.append(imgBonus);
             }
 
             //ajoute une image pour le joueur au dungeon
             else if (grille[i][j] === Player) {
                 const imgPlayer = document.createElement('img');
-                imgPlayer.src = '/assets/Player.png';
+                imgPlayer.src = 'assets/Player.png';
                 td.append(imgPlayer);
             }
 
             //ajoute une image de sol au dungeon
             else {
                 const imgSol = document.createElement('img');
-                imgSol.src = '/assets/soltd.png';
+                imgSol.src = 'assets/soltd.png';
                 td.append(imgSol);
             }
 
