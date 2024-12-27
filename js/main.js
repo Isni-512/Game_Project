@@ -108,6 +108,18 @@ function DeplacementPlayer(event) {
 }
 
 /**
+ * crée une nouvelle grille à l'aide de la touche designé
+ */
+function retryKey(event) {
+    if(event.key === "r" || event.key === "R"){
+    grille = creationGrille(15, 25);
+    PlacerAvatarUser(grille);
+    creationDungeon();
+    displayGameOver.style.display = 'none';
+    etatJeu = true;}
+}
+
+/**
  * crée une nouvelle grille
  */
 function retry() {
@@ -116,6 +128,15 @@ function retry() {
     creationDungeon();
     displayGameOver.style.display = 'none';
     etatJeu = true;
+}
+
+/**
+ * execute le checkGameOver pour mettre fin au jeu à l'aide de la touche designé
+ */
+function exitDungeonKey(event) {
+    if(event.key === "e" || event.key === "E"){
+    checkGameOver(0);
+    etatJeu = false;}
 }
 
 /**
@@ -134,5 +155,7 @@ boutonHaut.addEventListener('click', DeplacementPlayer);
 boutonGauche.addEventListener('click', DeplacementPlayer);
 boutonBas.addEventListener('click', DeplacementPlayer);
 boutonDroit.addEventListener('click', DeplacementPlayer);
+document.addEventListener('keydown', retryKey);
 boutonRetry.addEventListener('click', retry);
+document.addEventListener('keydown', exitDungeonKey);
 boutonExit.addEventListener('click', exitDungeon);
