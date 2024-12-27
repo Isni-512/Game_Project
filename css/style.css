@@ -147,4 +147,7 @@ main{
         bottom: 10%;
     }
 
+    .fleche svg{
+        width: 2rem;
+    }
  }
