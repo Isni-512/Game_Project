@@ -140,7 +140,7 @@ main{
     width: 8rem;
 }
 
-@media (max-width: 768px) or (orientation: portrait ) { 
+@media (max-width: 768px) { 
     .direction{
         position: fixed;
         right: 10%;
